@@ -18,7 +18,7 @@ namespace ismission4RyanPinkney.Models
 
         // Movie year
         [Required]
-        public int iYear { get; set; }
+        public string sYear { get; set; }
 
         // Movie director
         [Required]

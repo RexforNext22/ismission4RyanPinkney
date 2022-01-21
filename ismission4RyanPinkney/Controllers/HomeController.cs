@@ -13,6 +13,15 @@ namespace ismission4RyanPinkney.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        private MovieContext blahContext { get; set; }
+
+        public HomeController(ILogger<HomeController> logger, MovieContext someName)
+        {
+            _logger = logger;
+            blahContext = someName;
+        }
+
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -36,10 +45,22 @@ namespace ismission4RyanPinkney.Controllers
             return View();
         }
 
-        // Route for the Movie
+        // Route for the get Movie
+        [HttpGet]
         public IActionResult Movie()
         {
             return View();
+        }
+
+        // Route for the post Movie
+        [HttpPost]
+        public IActionResult Movie(Movie response)
+        {
+            // Save the infomration to the database
+            blahContext.Add(response);
+            blahContext.SaveChanges();
+
+            return View("com", response);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
