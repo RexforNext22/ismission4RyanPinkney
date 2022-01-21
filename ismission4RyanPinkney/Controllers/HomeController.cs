@@ -18,12 +18,26 @@ namespace ismission4RyanPinkney.Controllers
             _logger = logger;
         }
 
+        // Route for the index
         public IActionResult Index()
         {
             return View();
         }
 
+        // Route for the privacy
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        // Route for the Podcast
+        public IActionResult Podcast()
+        {
+            return View();
+        }
+
+        // Route for the Movie
+        public IActionResult Movie()
         {
             return View();
         }
