@@ -13,8 +13,12 @@ namespace ismission4RyanPinkney.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
+        // Database configurations
         private MovieContext blahContext { get; set; }
 
+
+        // Database configurations
         public HomeController(ILogger<HomeController> logger, MovieContext someName)
         {
             _logger = logger;
@@ -54,6 +58,7 @@ namespace ismission4RyanPinkney.Controllers
             blahContext.Add(response);
             blahContext.SaveChanges();
 
+            // Return them to the confirmation page
             return View("com", response);
         }
 
