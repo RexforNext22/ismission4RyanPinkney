@@ -33,15 +33,12 @@ namespace ismission4RyanPinkney.Models
         public string sRating { get; set; }
 
         // Movie edited
-        [Required]
         public bool bIsEdited { get; set; }
 
         // Movie lent to
-        [Required]
         public string sLentToName { get; set; }
 
-        // Movie title
-        [Required]
+        // Movie notes
         public string sNotes { get; set; }
 
 

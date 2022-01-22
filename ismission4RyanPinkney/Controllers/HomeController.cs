@@ -21,12 +21,6 @@ namespace ismission4RyanPinkney.Controllers
             blahContext = someName;
         }
 
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         // Route for the index
         public IActionResult Index()
         {
