@@ -17,6 +17,7 @@ namespace ismission4RyanPinkney.Models
         {
             mb.Entity<Movie>().HasData(
 
+                // Seed in three movies
                 new Movie
                 {
                     movie_id = 1,
