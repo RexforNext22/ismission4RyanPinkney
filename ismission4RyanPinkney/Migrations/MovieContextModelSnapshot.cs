@@ -21,15 +21,15 @@ namespace ismission4RyanPinkney.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("bIsEdited")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("sCategory")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("sDirector")
                         .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("sIsEdited")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("sLentToName")
@@ -58,9 +58,9 @@ namespace ismission4RyanPinkney.Migrations
                         new
                         {
                             movie_id = 1,
-                            bIsEdited = false,
                             sCategory = "Action/Adventure",
                             sDirector = "Joss Whedon",
+                            sIsEdited = "false",
                             sLentToName = "",
                             sNotes = "",
                             sRating = "PG-13",
@@ -70,9 +70,9 @@ namespace ismission4RyanPinkney.Migrations
                         new
                         {
                             movie_id = 2,
-                            bIsEdited = false,
                             sCategory = "Action/Adventure",
                             sDirector = "Tim Burton",
+                            sIsEdited = "false",
                             sLentToName = "",
                             sNotes = "",
                             sRating = "PG-13",
@@ -82,9 +82,9 @@ namespace ismission4RyanPinkney.Migrations
                         new
                         {
                             movie_id = 3,
-                            bIsEdited = false,
                             sCategory = "Action/Adventure",
                             sDirector = "Joel Schumacher",
+                            sIsEdited = "false",
                             sLentToName = "",
                             sNotes = "",
                             sRating = "PG-13",

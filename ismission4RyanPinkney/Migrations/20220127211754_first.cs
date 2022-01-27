@@ -2,7 +2,7 @@
 
 namespace ismission4RyanPinkney.Migrations
 {
-    public partial class second : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,7 +17,7 @@ namespace ismission4RyanPinkney.Migrations
                     sDirector = table.Column<string>(nullable: false),
                     sCategory = table.Column<string>(nullable: false),
                     sRating = table.Column<string>(nullable: false),
-                    bIsEdited = table.Column<bool>(nullable: false),
+                    sIsEdited = table.Column<string>(nullable: true),
                     sLentToName = table.Column<string>(nullable: true),
                     sNotes = table.Column<string>(nullable: true)
                 },
@@ -28,18 +28,18 @@ namespace ismission4RyanPinkney.Migrations
 
             migrationBuilder.InsertData(
                 table: "responses",
-                columns: new[] { "movie_id", "bIsEdited", "sCategory", "sDirector", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
-                values: new object[] { 1, false, "Action/Adventure", "Joss Whedon", "", "", "PG-13", "Avenger, The", "2012" });
+                columns: new[] { "movie_id", "sCategory", "sDirector", "sIsEdited", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
+                values: new object[] { 1, "Action/Adventure", "Joss Whedon", "false", "", "", "PG-13", "Avenger, The", "2012" });
 
             migrationBuilder.InsertData(
                 table: "responses",
-                columns: new[] { "movie_id", "bIsEdited", "sCategory", "sDirector", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
-                values: new object[] { 2, false, "Action/Adventure", "Tim Burton", "", "", "PG-13", "Batman", "1989" });
+                columns: new[] { "movie_id", "sCategory", "sDirector", "sIsEdited", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
+                values: new object[] { 2, "Action/Adventure", "Tim Burton", "false", "", "", "PG-13", "Batman", "1989" });
 
             migrationBuilder.InsertData(
                 table: "responses",
-                columns: new[] { "movie_id", "bIsEdited", "sCategory", "sDirector", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
-                values: new object[] { 3, false, "Action/Adventure", "Joel Schumacher", "", "", "PG-13", "Batman & Robin", "1997" });
+                columns: new[] { "movie_id", "sCategory", "sDirector", "sIsEdited", "sLentToName", "sNotes", "sRating", "sTitle", "sYear" },
+                values: new object[] { 3, "Action/Adventure", "Joel Schumacher", "false", "", "", "PG-13", "Batman & Robin", "1997" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -21,6 +21,7 @@ Form page
 
 
     <form method="POST">
+
         <!--Field for title-->
         <label asp-for="sTitle">Title</label>
         <input asp-for="sTitle" /><br />
@@ -41,6 +42,7 @@ Form page
         <label asp-for="sRating">Rating:</label>
         <select asp-for="sRating">
 
+            <option value="">Select a Rating</option>
             <option value="G">G</option>
             <option value="PG">PG</option>
             <option value="PG-13">PG-13</option>
@@ -53,8 +55,8 @@ Form page
         <input asp-for="sLentToName" /><br />
 
         <!--Field for ediited-->
-        <label asp-for="bIsEdited">Was the movie edited?:</label>
-        <select asp-for="bIsEdited">
+        <label asp-for="sIsEdited">Was the movie edited?:</label>
+        <select asp-for="sIsEdited">
 
             <option value="">None</option>
             <option value="true">Yes</option>
@@ -70,5 +72,7 @@ Form page
         <button type="submit">Submit</button>
 
     </form>
-
+    <div asp-validation-summary="All"></div>
 </div>
+
+<!--This is the fixed data validation-->

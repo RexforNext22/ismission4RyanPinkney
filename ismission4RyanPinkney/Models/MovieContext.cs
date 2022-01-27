@@ -25,7 +25,7 @@ namespace ismission4RyanPinkney.Models
                     sDirector = "Joss Whedon",
                     sCategory = "Action/Adventure",
                     sRating = "PG-13",
-                    bIsEdited = false,
+                    sIsEdited = "false",
                     sLentToName = "",
                     sNotes = ""
                 },
@@ -37,7 +37,7 @@ namespace ismission4RyanPinkney.Models
                     sDirector = "Tim Burton",
                     sCategory = "Action/Adventure",
                     sRating = "PG-13",
-                    bIsEdited = false,
+                    sIsEdited = "false",
                     sLentToName = "",
                     sNotes = ""
 
@@ -50,7 +50,7 @@ namespace ismission4RyanPinkney.Models
                     sDirector = "Joel Schumacher",
                     sCategory = "Action/Adventure",
                     sRating = "PG-13",
-                    bIsEdited = false,
+                    sIsEdited = "false",
                     sLentToName = "",
                     sNotes = ""
 

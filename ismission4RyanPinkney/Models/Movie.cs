@@ -33,7 +33,7 @@ namespace ismission4RyanPinkney.Models
         public string sRating { get; set; }
 
         // Movie edited
-        public bool bIsEdited { get; set; }
+        public string sIsEdited { get; set; }
 
         // Movie lent to
         public string sLentToName { get; set; }

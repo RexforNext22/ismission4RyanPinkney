@@ -54,6 +54,12 @@ namespace ismission4RyanPinkney.Controllers
         [HttpPost]
         public IActionResult Movie(Movie response)
         {
+            if (!ModelState.IsValid)
+            {
+
+
+                return View();
+            }
             // Save the infomration to the database
             blahContext.Add(response);
             blahContext.SaveChanges();
