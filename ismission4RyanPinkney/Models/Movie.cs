@@ -33,7 +33,9 @@ namespace ismission4RyanPinkney.Models
         public string sRating { get; set; }
 
         // Movie edited (I made this field a string to get the data validation to work correctly with Sqlite)
-        public string sIsEdited { get; set; }
+        // Professor Hilton told me to make this a required fieild so it would work with sqlite
+        [Required]
+        public bool bIsEdited { get; set; }
 
         // Movie lent to
         public string sLentToName { get; set; }
